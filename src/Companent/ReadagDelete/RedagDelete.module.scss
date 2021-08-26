@@ -1,0 +1,170 @@
+
+.cont{
+    width: 30%;
+    margin: 1rem 0;
+    .NavLink{
+        text-decoration: none;
+        width: 100%;
+        margin: auto;    
+        transition: .1s;
+        .back{
+            padding: 1rem;
+            transition: .7s;
+            border-radius: 6px;
+            border: 1px solid gold;
+            color: white;
+            .card_Car{
+                cursor: pointer;
+                width: 100%;
+                background-color: none;
+                padding: 1%;
+                border-radius: 5px;
+                .info_Car{
+                    width: 100%;
+                    display: flex;
+                    position: relative;
+                    z-index: 2;
+                    .info_Card{
+                        width: 100%;
+                        margin: 0 4%;
+                        div{
+                            border: 1px solid GOLD;
+                            border-radius: 5px;
+                            width: 100%;
+                            height: 4rem;
+                            margin: auto;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img{
+                                width: 100%;
+                                height: 100%;       
+
+                            }
+                            h1{
+                                margin:25% 0;
+                            }
+                        }
+                        p{
+                            margin: 1% 0;
+                            text-align: center;
+                        }
+                    }
+                }
+                .car_img1{
+                    width: 70%;
+                    height: 25vh;
+                    margin-left: auto;
+                    margin-right: 3rem;
+                    position: relative;
+                    z-index: 1;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 100%;
+                        color: white;
+                    }
+                }
+                .sum{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    position: relative;
+                    z-index: 3;
+                    .name{
+                        h1{
+                            margin: 0;
+                            text-align: left;
+                            font-weight: 500;
+                        }
+                        p{
+                            margin: 0;
+                            font-size: large;
+                        }
+                    }
+                    .sum_text{
+                        text-align: right;
+                        p{
+                            margin: 0;
+                        }
+                        h3{
+                            margin: 0;
+                            font-size: x-large;
+                        }
+                    }
+                    
+                }
+            }
+        }        
+    }   
+    .cont_btn{
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        button{
+            width: 20%;
+            height: 80%;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 150%;
+        }
+        .delete{
+            background-color: red;
+            color: white;
+            &:hover{
+                background-color: rgb(173, 17, 17);
+            }
+        }
+        .redag{
+            background-color: blue;
+            color: white;
+            &:hover{
+                background-color: rgb(2, 2, 173);
+            }
+        }
+    }
+}
+@media screen and (max-width: 1310px) {
+    .cont{
+        .NavLink{
+            .back{
+                .card_Car{
+                    .sum{
+                        display: block;
+                        .sum_text{
+                            margin-top: 1rem;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+    .cont{
+        width: 45%;
+        .NavLink{
+            .back{
+                .card_Car{
+                    .sum{
+                        display: flex;
+                        .sum_text{
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 738px) {
+    .cont{
+        width: 100%;
+    }
+}
